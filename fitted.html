@@ -17,10 +17,17 @@
    <meta name="msapplication-TileColor" content="#da532c">
    <meta name="theme-color" content="#ffffff">
   <!--end favicon-->
+
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 
-<body>
+<body id="fitted">
 
 
   <header>
@@ -76,7 +83,7 @@
 
 
 
-    <div><!--objective container-->
+    <div id="objective"><!--objective container-->
       <h2>Objective</h2>
       <p>
         Design an exercise web application which helps users start and
@@ -88,7 +95,7 @@
 
 
 
-    <div><!--user needs container-->
+    <div id="needs"><!--user needs container-->
       <h2>User Needs</h2>
       <ul>
         <li>Database of exercises and recommendations</li>
@@ -102,7 +109,7 @@
 
 
 
-    <div><!--sitemap container-->
+    <div id="sitemap"><!--sitemap container-->
       <h2>Sitemap</h2>
       <div>
        <div><!--sitemap image container-->
@@ -118,7 +125,7 @@
 
 
 
-    <div><!--low-fi container-->
+    <div id="lowfi"><!--low-fi container-->
       <h2>Low-Fidelity Wireframes</h2>
       <div>
        <div><!--lofi image container-->
@@ -150,7 +157,7 @@
 
 
 
-    <div><!--high-fi container-->
+    <div id="hifi"><!--high-fi container-->
       <h2>High-Fidelity Wireframes</h2>
       <div>
        <div><!--high-fi image container-->
@@ -189,7 +196,7 @@
 
 
 
-    <div><!--moodboard container-->
+    <div id="moodboard"><!--moodboard container-->
       <h2>moodboard</h2>
       <div>
         <div><!--moodboard image container-->
@@ -209,7 +216,7 @@
 
 
 
-    <div><!--style guide container-->
+    <div id="styleguide"><!--style guide container-->
       <h2>Style Guide</h2>
       <div>
         <picture>
@@ -222,11 +229,11 @@
 
 
 
-    <div><!--final screens container-->
+    <div id="final screens"><!--final screens container-->
       <h2>Final Screens</h2>
       <div><!--screens sub-container-->
 
-        <div><!--login container-->
+        <div id="login"><!--login container-->
           <div><!--login images-->
            <picture>
             <source srcset="img/fitted/finalscreens/1splashscreen@1x.png" media="(max-width:767px)">
@@ -252,7 +259,7 @@
           <p>Signup/Login</p>
       </div>
 
-      <div><!--exercise container-->
+      <div id="exercises"><!--exercise container-->
         <div><!--exercise images-->
          <picture>
           <source srcset="img/fitted/finalscreens/6exerciselist@1x.png" media="(max-width:767px)">
@@ -274,7 +281,7 @@
         <p>Find and add exercises</p>
       </div>
 
-      <div><!--achievement container-->
+      <div id="achievement"><!--achievement container-->
        <div><!--achievement images-->
         <picture>
           <source srcset="img/fitted/finalscreens/10achieve@1x.png" media="(max-width:767px)">
@@ -292,7 +299,7 @@
        <p>Share Achievements</p>
       </div>
 
-      <div><!--goals container-->
+      <div id="goals"><!--goals container-->
        <div><!--goals images-->
         <picture>
           <source srcset="img/fitted/finalscreens/13goals@1x.png" media="(max-width:767px)">
@@ -321,7 +328,7 @@
 
 
 
-    <div><!--mockups container-->
+    <div id="mockups"><!--mockups container-->
       <h2>mockups</h2>
       <div>
         <div><!--phone mockup container-->
@@ -345,7 +352,7 @@
 
 
 
-    <div><!--prototype container-->
+    <div id="prototype"><!--prototype container-->
       <h2>Prototype</h2>
       <div>
         <iframe width="438" height="930" src="https://invis.io/HAVFWJC2PTN" frameborder="0" allowfullscreen>Fitted Prototype</iframe>
@@ -353,7 +360,7 @@
     </div>
 
 
-    <div><!--conclusion container-->
+    <div id="conclusion"><!--conclusion container-->
       <div>
         <p>This project was a great opportunity to sharpen my design skills. Thank you for reading!</p>
       </div>
@@ -366,28 +373,28 @@
  </main>
 
 
-<footer id="contact">
-  <div>
-    <h2>Contact Me</h2>
-    <p>Like my work? Looking for a hard-working and loyal designer?</p>
-    <p>Feel free to reach out!</p>
+ <footer id="contact">
+   <div>
+     <h2>Contact Me</h2>
+     <p>Like my work? Looking for a hard-working and loyal designer?</p>
+     <p>Feel free to reach out!</p>
 
-    <div>
-     <a href="tel:+16519557704">Call me</a>
-     <a href="mailto:peterolsondesign[at]gmail.com">Email me</a>
-    </div>
+     <div>
+      <a href="tel:+16519557704">Call me</a>
+      <a href="mailto:peterolsondesign[at]gmail.com" class="button contact">Email me</a>
+     </div>
 
-    <div>
-      <a href="http://www.linkedin.com/in/peterolson8615" target="_blank">
-      <svg height="60px" version="1.1" viewBox="0 0 60 60" width="60px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="black" stroke="none" stroke-width="1"><g id="slice" transform="translate(-600.000000, 0.000000)"/><g fill="#000000" id="linkedin" transform="translate(16.000000, 17.000000)"><path d="M5.88307542,26.8231512 L5.88307542,8.52433895 L0.227370038,8.52433895 L0.227370038,26.8231512 L5.88307542,26.8231512 Z M5.88307542,2.03821455 C5.84938823,0.400659962 4.75801564,-0.846153846 2.98505434,-0.846153846 C1.21163158,-0.846153846 0.0528846154,0.400659962 0.0528846154,2.03821455 C0.0528846154,3.64020234 1.17794439,4.92307692 2.9172185,4.92307692 L2.95090569,4.92307692 C4.75801564,4.92307692 5.88307542,3.64020234 5.88307542,2.03821455 Z M15.1100418,26.8231517 L15.1100418,16.3973729 C15.1100418,15.8394014 15.1503704,15.28143 15.3144472,14.8836682 C15.7630341,13.7682778 16.7839561,12.6136637 18.498199,12.6136637 C20.7438958,12.6136637 22.152278,13.8881587 22.152278,16.3973727 L22.152278,26.8231516 L27.8461538,26.8231517 L27.8461538,16.1183872 C27.8461538,10.3839878 24.7850453,7.71566901 20.7019099,7.71566901 C17.3540813,7.71566901 15.8845724,9.58735929 15.0686083,10.861302 L15.1094893,8.41391226 L9.425462,8.41391226 C9.50722415,10.1657215 9.425462,26.8231516 9.425462,26.8231516 L15.1100418,26.8231517 Z"/></g></g></svg></a>
+     <div>
+       <a href="http://www.linkedin.com/in/peterolson8615" target="_blank">
+       <svg height="60px" version="1.1" viewBox="0 0 60 60" width="60px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="black" stroke="none" stroke-width="1"><g id="slice" transform="translate(-600.000000, 0.000000)"/><g fill="#000000" id="linkedin" transform="translate(16.000000, 17.000000)"><path d="M5.88307542,26.8231512 L5.88307542,8.52433895 L0.227370038,8.52433895 L0.227370038,26.8231512 L5.88307542,26.8231512 Z M5.88307542,2.03821455 C5.84938823,0.400659962 4.75801564,-0.846153846 2.98505434,-0.846153846 C1.21163158,-0.846153846 0.0528846154,0.400659962 0.0528846154,2.03821455 C0.0528846154,3.64020234 1.17794439,4.92307692 2.9172185,4.92307692 L2.95090569,4.92307692 C4.75801564,4.92307692 5.88307542,3.64020234 5.88307542,2.03821455 Z M15.1100418,26.8231517 L15.1100418,16.3973729 C15.1100418,15.8394014 15.1503704,15.28143 15.3144472,14.8836682 C15.7630341,13.7682778 16.7839561,12.6136637 18.498199,12.6136637 C20.7438958,12.6136637 22.152278,13.8881587 22.152278,16.3973727 L22.152278,26.8231516 L27.8461538,26.8231517 L27.8461538,16.1183872 C27.8461538,10.3839878 24.7850453,7.71566901 20.7019099,7.71566901 C17.3540813,7.71566901 15.8845724,9.58735929 15.0686083,10.861302 L15.1094893,8.41391226 L9.425462,8.41391226 C9.50722415,10.1657215 9.425462,26.8231516 9.425462,26.8231516 L15.1100418,26.8231517 Z"/></g></g></svg></a>
 
-      <a href="https://www.behance.net/peterolson2" target="_blank">
-      <svg data-name="Layer 21" height="24" id="Layer_21" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><title/><path d="M22,14.01581c0-4.18774-2.60071-5.04962-4.48437-5.04962a4.31726,4.31726,0,0,0-4.5722,4.6358c0,3.77441,2.06238,5.015,4.752,5.015a4.125,4.125,0,0,0,4.1969-2.92963H19.30939a1.616,1.616,0,0,1-1.614.99945,2.0543,2.0543,0,0,1-2.24219-2.19H22ZM15.52533,13c.14325-1.20642.77148-2.05194,1.95477-2.05194A2.01574,2.01574,0,0,1,19.41705,13Z"/><rect height="1.41437" width="5" x="15" y="6.58563"/><path d="M10.30621,11.70648A2.47235,2.47235,0,0,0,11.823,9.17316c0-1.27527-.77545-3.17072-3.80908-3.17072H2V18.37585H7.23846c2.53333,0,3.20538-.43091,3.91254-1.12a3.59626,3.59626,0,0,0,1.06879-2.551A2.88541,2.88541,0,0,0,10.30621,11.70648ZM4.5,8H8a1.5,1.5,0,0,1,0,3H4.5Zm3.75,8H4.5V13H8.25a1.5,1.5,0,0,1,0,3Z"/></svg></a>
-    </div>
+       <a href="https://www.behance.net/peterolson2" target="_blank">
+       <svg data-name="Layer 21" height="24" id="Layer_21" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><title/><path d="M22,14.01581c0-4.18774-2.60071-5.04962-4.48437-5.04962a4.31726,4.31726,0,0,0-4.5722,4.6358c0,3.77441,2.06238,5.015,4.752,5.015a4.125,4.125,0,0,0,4.1969-2.92963H19.30939a1.616,1.616,0,0,1-1.614.99945,2.0543,2.0543,0,0,1-2.24219-2.19H22ZM15.52533,13c.14325-1.20642.77148-2.05194,1.95477-2.05194A2.01574,2.01574,0,0,1,19.41705,13Z"/><rect height="1.41437" width="5" x="15" y="6.58563"/><path d="M10.30621,11.70648A2.47235,2.47235,0,0,0,11.823,9.17316c0-1.27527-.77545-3.17072-3.80908-3.17072H2V18.37585H7.23846c2.53333,0,3.20538-.43091,3.91254-1.12a3.59626,3.59626,0,0,0,1.06879-2.551A2.88541,2.88541,0,0,0,10.30621,11.70648ZM4.5,8H8a1.5,1.5,0,0,1,0,3H4.5Zm3.75,8H4.5V13H8.25a1.5,1.5,0,0,1,0,3Z"/></svg></a>
+     </div>
 
-    <p>Copyright @ Peter Olson 2021</p>
-  </div>
-</footer>
+     <p id="copyright">Copyright @ Peter Olson 2021</p>
+   </div>
+ </footer>
 
 </body>
 </html>
