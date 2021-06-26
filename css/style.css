@@ -7,7 +7,9 @@ Secondary Colors (Blue & Green): #2C6C90, #2C9082;
 Text Colors (Black & Gray): #00000, #58595B;
 */
 
-
+* {
+  box-sizing: border-box;
+}
 
 body{
 background-color: #ffffff;
@@ -19,21 +21,28 @@ color:#58595B
 }
 
 h1, h2, h3 {
-  line-height: 1.2;
+  line-height: 1.4;
   color: #000000;
 }
 h1 {
-  font-size: 3em;
+  font-size: 2.2em;
   font-weight: 700;
 }
 h2 {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.75em;
   font-weight: 500;
+}
+
+span{
+font-weight: 500;
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: #2C9082;
 }
 
 img{
@@ -90,10 +99,12 @@ a:active {
 
 .button.contact {
   background-color: transparent;
-  color: #2C9082;
+  color: #ffffff;
   text-transform: uppercase;
-  border: 2px solid #2C9082;
+  border: 2px solid #ffffff;
   text-decoration: none;
+  padding: 7px;
+  margin: 0 10px;
 }
 
 .button.contact:hover {
@@ -114,5 +125,116 @@ a:active {
   text-decoration-color: #2C9082;
 }
 #copyright{
-  font-size:10px;
+  font-size: 10px;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#projects .row { padding-bottom: 25px; border-bottom: 1px solid #2C6C90; }
+
+#hero h1 {
+  text-align: center;
+}
+#bio h1{
+  text-align: center;
+}
+#Fittedapp h1{
+    text-align: center;
+}
+.logo {
+  max-width: 250px;
+}
+
+header {
+  text-align: center;
+  background-color:#ffffff;
+  padding: 20px 0;
+  box-shadow:  0px 4px 4px 0px rgba(153, 170, 187, 0.9);
+  position: fixed;
+  width: 100%;
+}
+nav{
+  display: inline-block;
+  width: 100%;
+
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000000;
+}
+nav > ul > li > a:visited {
+color: #000000;
+}
+nav > ul > li > a:hover {
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: #2C9082;
+}
+nav > ul > li > a:active {
+  color: #2C6C90;
+}
+
+main {
+  padding-top: 150px;
+}
+
+
+#contact{
+background-color: #2C9082;
+color: #ffffff;
+padding: 5px 0;
+margin: 25px 0 0 0;
+}
+#contact h2{
+  color:#ffffff;
+
+}
+#phone{
+  color:#ffffff;
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+}
+.icon{
+  margin: 0 10px;
+}
+
+.line{
+  padding-bottom: 25px; border-bottom: 1px solid #2C6C90;
+}
+#hifi p{
+  text-align: center;
+}
+
+.background{
+background-color: #e3e5e5;
+padding:5px;
+
+}
+#finalscreens h3{
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+#login, #exercises, #achievements, #goals{
+  padding: 10px 0;
 }
