@@ -25,7 +25,7 @@ h1, h2, h3 {
   color: #000000;
 }
 h1 {
-  font-size: 2.2em;
+  font-size: 3em;
   font-weight: 700;
 }
 h2 {
@@ -38,18 +38,28 @@ h3 {
   font-weight: 500;
 }
 
-span{
+.underline{
 font-weight: 500;
   color: #000000;
   text-decoration: underline;
   text-decoration-color: #2C9082;
+}
+.fitline{
+font-weight: 500;
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: #ff4e00;
 }
 
 img{
 
   width: 100%;
 }
-
+.berlin-illustration{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
 a {
   color: #000000;
   text-decoration: none;
@@ -69,6 +79,13 @@ a:active {
 }
 
 
+#phone  {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+}
+
+
 .button {
   display: inline-block;
   background-color: #2C9082;
@@ -77,8 +94,8 @@ a:active {
   padding: 8px;
   border-radius: 8px;
   border-bottom: 1px solid #2C6C90;
-  transition: 0.2s opacity;
   text-decoration: none;
+transition: 0.5s opacity;
 }
 
 .button:visited{
@@ -138,6 +155,7 @@ a:active {
   margin: 25px 0;
 }
 
+
 #projects .row { padding-bottom: 25px; border-bottom: 1px solid #2C6C90; }
 
 #hero h1 {
@@ -172,6 +190,8 @@ nav > ul {
   padding: 0;
 }
 
+
+
 nav > ul > li {
   display: inline-block;
 }
@@ -194,6 +214,19 @@ nav > ul > li > a:active {
   color: #2C6C90;
 }
 
+#banner> ul{
+  text-align:center;
+  list-style-type: none;
+  padding: 0;
+}
+
+#banner> ul> li{
+display: inline-block;
+  padding: 0 15px;
+
+}
+
+
 main {
   padding-top: 150px;
 }
@@ -209,11 +242,7 @@ margin: 25px 0 0 0;
   color:#ffffff;
 
 }
-#phone{
-  color:#ffffff;
-  text-decoration: underline;
-  text-decoration-color: #ffffff;
-}
+
 .icon{
   margin: 0 10px;
 }
@@ -221,13 +250,15 @@ margin: 25px 0 0 0;
 .line{
   padding-bottom: 25px; border-bottom: 1px solid #2C6C90;
 }
-#hifi p{
+#fitted p{
   text-align: center;
 }
 
 .background{
-background-color: #e3e5e5;
-padding:5px;
+border: 1px;
+border-color: #ff4e00;
+border-style: solid;
+
 
 }
 #finalscreens h3{
@@ -237,4 +268,120 @@ padding:5px;
 }
 #login, #exercises, #achievements, #goals{
   padding: 10px 0;
+}
+#fitted h2, h3{
+  text-align: center;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+   text-align: unset;
+   padding: 20px 0 13px;
+ }
+
+ nav {
+   width: auto;
+   float: right;
+   margin-top: 4px;
+ }
+body{
+  font-size: 18px;
+}
+#hero span {
+  display: block;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+.col-md-3 {
+  width: 25%;
+}
+.col-md-4 {
+  width: 33.33%;
+}
+.col-md-6 {
+  width: 50%;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#about h3 { margin-top: 0;}
+
+.pic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+iframe{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {width: 58.33%;}
+  .col-lg-5 {width: 41.66%;}
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#contact{
+  text-align:center;
+  image-orientation: center;
+}
+#hero p{
+  text-align: center;
+}
+#lowfi p{
+  text-align: center;
+}
+}
+
+/* ==============================
+CSS Animation code
+================================= */
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.cloud-back {
+  animation: 50s cloud-move-reverse infinite alternate linear;
 }
