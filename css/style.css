@@ -1,33 +1,35 @@
-
-
 /*
 Colors used:
 Primary Color (white): #FFFFFF;
-Secondary Colors (Blue & Green): #2C6C90, #2C9082;
+Secondary Colors (Blue & Green): #2C6C90, #2C9082, #288477;
 Text Colors (Black & Gray): #00000, #58595B;
 */
-
 * {
   box-sizing: border-box;
 }
 
-body{
-background-color: #ffffff;
-font-family: 'Inter', sans-serif;
-font-size: 16px;
-font-weight: 400;
-line-height: 1.4;
-color:#58595B
+body {
+  background-color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #58595b;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1.4;
-  color: #000000;
+  color: #000;
+  background-color: #fff;
 }
+
 h1 {
   font-size: 2.5em;
   font-weight: 700;
 }
+
 h2 {
   font-size: 2em;
   font-weight: 600;
@@ -38,118 +40,120 @@ h3 {
   font-weight: 500;
 }
 
-.underline{
-font-weight: 500;
-  color: #000000;
+.underline {
+  font-weight: 500;
+  color: #000;
   text-decoration: underline;
-  text-decoration-color: #2C9082;
+  text-decoration-color: #2c9082;
 }
-.fitline{
-font-weight: 500;
-  color: #000000;
+
+.fitline {
+  font-weight: 500;
+  color: #000;
   text-decoration: underline;
   text-decoration-color: #ff4e00;
 }
 
-img{
+img {
   width: 100%;
 }
 
-.logo{
+.logo {
   max-width: 150px;
 }
-.berlin-illustration{
+
+.berlin-illustration {
   width: 100%;
   max-width: 100%;
   height: auto;
 }
+
 a {
-  color: #000000;
+  color: #000;
   text-decoration: none;
 }
 
 a:visited {
-  color: #000000;
+  color: #000;
 }
-a:hover,a:focus {
-  color: #000000;
+
+a:hover,
+a:focus {
+  color: #000;
   text-decoration: underline;
-  text-decoration-color: #2C9082;
+  text-decoration-color: #2c9082;
 }
 
 a:active {
-  color: #2C6C90;
+  color: #2c6c90;
 }
 
-
-#phone  {
-  color: #ffffff;
+#phone {
+  color: #fff;
   text-decoration: underline;
-  text-decoration-color: #ffffff;
+  text-decoration-color: #fff;
 }
-
 
 .button {
   display: inline-block;
-  background-color: #2C9082;
-  color: #ffffff;
+  background-color: #288477;
+  color: #fff;
   font-weight: 400;
   padding: 8px;
   border-radius: 8px;
-  border-bottom: 1px solid #2C6C90;
+  border-bottom: 1px solid #2c6c90;
   text-decoration: none;
-transition: 0.5s opacity;
+  transition: 0.5s opacity;
 }
 
-.button:visited{
-  color: #ffffff;
+.button:visited {
+  color: #fff;
   text-decoration: none;
 }
+
 .button:hover {
   opacity: 0.8;
   text-decoration: none;
 }
 
 .button:active {
-  background-color: #2C6C90;
+  background-color: #2c6c90;
   opacity: 0.8;
   text-decoration: none;
 }
 
-
 .button.contact {
   background-color: transparent;
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   text-decoration: none;
   padding: 7px;
   margin: 0 10px;
 }
 
 .button.contact:hover {
-  background-color: #2C9082;
-  color: #ffffff;
+  background-color: #288477;
+  color: #fff;
 }
 
-
-.button.resume{
-  background-color: #2C6C90;
-  color: #ffffff;
-  border-bottom: 1px solid #2C6C90;
+.button.resume {
+  background-color: #2c6c90;
+  color: #fff;
+  border-bottom: 1px solid #2c6c90;
   text-decoration: none;
 }
 
-.list{
+.list {
   text-decoration: underline;
-  text-decoration-color: #2C9082;
+  text-decoration-color: #2c9082;
 }
-#copyright{
+
+#copyright {
   font-size: 10px;
 }
 
 /* Layout styling */
-
 .container {
   padding: 0 15px;
 }
@@ -158,66 +162,71 @@ transition: 0.5s opacity;
   margin: 25px 0;
 }
 
-
-#projects .row { padding-bottom: 25px; border-bottom: 1px solid #2C6C90; }
+#projects .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #2c6c90;
+}
 
 #hero h1 {
   text-align: center;
 }
-#bio h1{
-  text-align: center;
-}
-#Fittedapp h1{
-    text-align: center;
-}
-#projects h2{
-  text-align: center;
-}
-header {
 
-  background-color:#ffffff;
+#bio h1 {
+  text-align: center;
+}
+
+#Fittedapp h1 {
+  text-align: center;
+}
+
+#projects h2 {
+  text-align: center;
+}
+
+header {
+  background-color: #fff;
   padding: 10px 0 4px;
-  box-shadow:  0px 4px 4px 0px rgba(153, 170, 187, 0.9);
+  box-shadow: 0 4px 4px 0 rgba(153, 170, 187, 0.9);
   position: fixed;
   width: 100%;
 }
 
-
-
 nav > ul {
   list-style-type: none;
   padding: 0;
-  margin:  0;
+  margin: 0;
 }
-
-
-
 
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #000000;
+  color: #000;
 }
+
 nav > ul > li > a:visited {
-color: #000000;
+  color: #000;
 }
+
 nav > ul > li > a:hover {
-  color: #000000;
+  color: #000;
   text-decoration: underline;
-  text-decoration-color: #2C9082;
+  text-decoration-color: #2c9082;
 }
+
 nav > ul > li > a:active {
-  color: #2C6C90;
+  color: #2c6c90;
 }
 
 .navtoggle li:not(:last-child) {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -225,77 +234,86 @@ nav > ul > li > a:active {
   font-size: 20px;
   padding-right: 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
 }
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1.5px solid  #2C9082;
+  border-top: 1.5px solid #2c9082;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
-#banner> ul{
-  text-align:center;
+
+#banner > ul {
+  text-align: center;
   list-style-type: none;
   padding: 0;
 }
 
-#banner> ul> li{
-display: inline-block;
+#banner > ul > li {
+  display: inline-block;
   padding: 0 15px;
-
 }
-
 
 main {
   padding-top: 85px;
 }
 
-
-#contact{
-background-color: #2C9082;
-color: #ffffff;
-padding: 5px 0;
-margin: 25px 0 0 0;
-}
-#contact h2{
-  color:#ffffff;
-
+#contact {
+  background-color: #288477;
+  color: #fff;
+  padding: 5px 0;
+  margin: 25px 0 0;
 }
 
-.icon{
+#contact h2 {
+  color: #fff;
+  background-color: #288477;
+}
+
+.icon {
   margin: 0 10px;
 }
 
-.line{
-  padding-bottom: 25px; border-bottom: 1px solid #2C6C90;
+.line {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #2c6c90;
 }
-#fitted p{
+
+#fitted p {
   text-align: center;
 }
 
-.background{
-border: 1px;
-border-color: #ff4e00;
-border-style: solid;
-
-
+.background {
+  border: 1px;
+  border-color: #ff4e00;
+  border-style: solid;
 }
-#finalscreens h3{
+
+#finalscreens h3 {
   text-align: center;
   font-size: 1.25em;
   font-weight: 500;
 }
-#login, #exercises, #achievements, #goals{
+
+#login,
+#exercises,
+#achievements,
+#goals {
   padding: 10px 0;
 }
-#fitted h2, h3{
+
+#fitted h2,
+h3 {
   text-align: center;
 }
 
@@ -304,111 +322,148 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
-   text-align: unset;
-   padding: 20px 0 13px;
- }
- .logo{
-   max-width: 250px;
- }
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
 
- nav {
-   width: auto;
-   float: right;
-   margin-top: 4px;
- }
- nav> ul{
-   margin: 1em 0;
- }
- nav > ul > li {
-   display: inline-block;
- }
- .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle li:last-child {
-  display: none;
-}
-body{
-  font-size: 18px;
-}
-#hero span {
-  display: block;
-}
-[class*="col-"] {
-  float: left;
-  padding: 10px;
-}
-.col-md-3 {
-  width: 25%;
-}
-.col-md-4 {
-  width: 33.33%;
-}
-.col-md-6 {
-  width: 50%;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+  .logo {
+    max-width: 250px;
+  }
 
-#about h3 { margin-top: 0;}
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
 
-.pic{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about h3 {
+    margin-top: 0;
+  }
+
+  .pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+
+  iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+  }
 }
-
-iframe{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-
-
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  .col-lg-7 {width: 58.33%;}
-  .col-lg-5 {width: 41.66%;}
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
   .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-#contact{
-  text-align:center;
-  image-orientation: center;
-}
-#hero p{
-  text-align: center;
-}
-#lowfi p{
-  text-align: center;
-}
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contact {
+    text-align: center;
+  }
+
+  #hero p {
+    text-align: center;
+  }
+
+  #lowfi p {
+    text-align: center;
+  }
 }
 
 /* ==============================
 CSS Animation code
 ================================= */
 @keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
 }
+
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
+
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .sun {
@@ -426,6 +481,7 @@ CSS Animation code
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 .cloud-back {
   animation: 50s cloud-move-reverse infinite alternate linear;
 }
